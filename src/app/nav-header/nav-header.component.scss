@@ -1,4 +1,22 @@
+header {
+  margin-top: 3vh;
+}
+
 button {
-  margin: 10px;
+  margin: 10px 5px;
   border-radius: 25px;
+  background-color: white;
+  color: black;
+}
+
+button:hover, .selected-nav {
+  background-color: #1848c4;
+  color: white;
+}
+.nav-button-wrapper {
+  text-align: right;
+  margin-right: 10vw;
+}
+.nat-buttons {
+  display: inline-block;
 }
