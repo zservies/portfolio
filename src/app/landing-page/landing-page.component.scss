@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.content {
+  display: inline-block;
+  text-align: center;
+  font-size: 25px;
+}
+.description {
+  font-size: 20px;
+  opacity: 0.7;
+}
