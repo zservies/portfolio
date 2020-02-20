@@ -9,13 +9,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 /* Manually imported */
 import {MatButtonModule} from '@angular/material/button';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavHeaderComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
