@@ -1,10 +1,12 @@
 <header>
   <div class = "nav-button-wrapper">
     <div class = "nav-buttons">
-      <button mat-flat-button class = "selected-nav">About.</button>
-      <button mat-flat-button>About.</button>
-      <button mat-flat-button>Resume.</button>
-      <button mat-flat-button>Socials.</button>
+      <button mat-flat-button [ngClass] = "{'selected-nav': (buttonToggled.home.isToggled)}" (click) = "toggleNav('home')">
+        <i class="material-icons">home</i>
+      </button>
+      <button mat-flat-button [ngClass] = "{'selected-nav': (buttonToggled.about.isToggled)}" (click) = "toggleNav('about')">About.</button>
+      <button mat-flat-button [ngClass] = "{'selected-nav': (buttonToggled.resume.isToggled)}" (click) = "toggleNav('resume')">Resume.</button>
+      <button mat-flat-button [ngClass] = "{'selected-nav': (buttonToggled.socials.isToggled)}" (click) = "toggleNav('socials')">Socials.</button>
     </div>
   </div>
 </header>
