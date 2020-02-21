@@ -13,3 +13,19 @@
   font-size: 20px;
   opacity: 0.7;
 }
+
+i {
+  font-size: 50px;
+  user-select: none;
+}
+
+i:hover {
+  color: grey;
+  cursor: pointer;
+}
+.back-arrow {
+  margin-right: 100px;
+}
+.forward-arrow {
+  margin-left: 100px;
+}
