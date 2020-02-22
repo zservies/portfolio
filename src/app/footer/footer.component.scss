@@ -6,6 +6,20 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  table {
+    color: #6b778c;
+    margin-bottom: 25px;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 50px 5px;
+    a {
+      color: #6b778c;
+      text-decoration: none;
+    }
+    a:hover {
+      font-weight: bold;
+    }
+  }
 }
 .footer-wrapper {
   height: 5rem;
