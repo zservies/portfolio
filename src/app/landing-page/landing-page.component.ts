@@ -22,10 +22,10 @@ export class LandingPageComponent implements OnInit {
       case 'back':
         this.carouselCount--;
     }
-    if (this.carouselCount > 4) {
+    if (this.carouselCount > 3) {
       this.carouselCount = 1;
     } else if (this.carouselCount === 0) {
-      this.carouselCount = 4;
+      this.carouselCount = 3;
     }
   }
 }
