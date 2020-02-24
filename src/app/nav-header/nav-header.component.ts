@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav-header',
@@ -25,7 +26,7 @@ export class NavHeaderComponent implements OnInit {
     };
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   toggleNav(event) {
     // Loop through the button toggles and set them all to false
@@ -34,10 +35,32 @@ export class NavHeaderComponent implements OnInit {
     }
     // Set the toggle emitted to true.
     this.buttonToggled[event].isToggled = true;
+    this.router.navigateByUrl(event);
+  }
+
+  currentLocation() {
+    // Get current pathname and call toggleNav() to do appropriate routing/button highlighting.
+    const currentLocation = window.location.pathname;
+    switch (currentLocation) {
+      case '/home':
+        this.toggleNav('home');
+        break;
+      case '/':
+        this.toggleNav('home');
+        break;
+      case '/about':
+        this.toggleNav('about');
+        break;
+      case '/resume':
+        this.toggleNav('resume');
+        break;
+      case '/socials':
+        this.toggleNav('socials');
+    }
   }
 
   ngOnInit() {
-    this.buttonToggled.home.isToggled = true;
+    this.currentLocation();
   }
 
 }
