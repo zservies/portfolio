@@ -1,0 +1,22 @@
+.about-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 100vw;
+}
+.content-container {
+  width: 45%;
+}
+.about {
+  margin: 30px 0;
+}
+.sub-header {
+  margin: 20px 0;
+  font-size: 20px;
+  opacity: 0.9;
+}
+p {
+  opacity: 0.7;
+  line-height: 20px;
+}
