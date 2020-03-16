@@ -19,9 +19,6 @@ export class NavHeaderComponent implements OnInit {
       },
       resume: {
         isToggled: false
-      },
-      socials: {
-        isToggled: false
       }
     };
 
@@ -54,8 +51,6 @@ export class NavHeaderComponent implements OnInit {
       case '/resume':
         this.toggleNav('resume');
         break;
-      case '/socials':
-        this.toggleNav('socials');
     }
   }
 
