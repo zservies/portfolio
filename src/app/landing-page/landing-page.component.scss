@@ -24,6 +24,7 @@
 i {
   font-size: 50px;
   user-select: none;
+  position: absolute;
 }
 
 i:hover {
@@ -32,9 +33,11 @@ i:hover {
 }
 .back-arrow {
   margin-right: 100px;
+  left: 30%;
 }
 .forward-arrow {
   margin-left: 100px;
+  right: 30%;
 }
 
 @keyframes fade-description {
