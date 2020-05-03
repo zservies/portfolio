@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+// import test from '../../assets/ZacharyServies_Resume.pdf'
 @Component({
   selector: 'app-nav-header',
   templateUrl: './nav-header.component.html',
@@ -17,9 +17,9 @@ export class NavHeaderComponent implements OnInit {
       about: {
         isToggled: false
       },
-      // resume: {
-      //   isToggled: false
-      // }
+      resume: {
+        isToggled: false
+      }
     };
 
 
@@ -48,9 +48,9 @@ export class NavHeaderComponent implements OnInit {
       case '/about':
         this.toggleNav('about');
         break;
-      // case '/resume':
-      //   this.toggleNav('resume');
-      //   break;
+      case '/resume':
+        this.toggleNav('resume');
+        break;
     }
   }
 
