@@ -6,7 +6,7 @@
   width: 100%;
 }
 .content-container {
-  width: 50%;
+  width: 35%;
   height: 95%;
 }
 .about {
@@ -21,7 +21,9 @@ p {
   opacity: 0.7;
   line-height: 25px;
   font-size: 13pt;
-  margin: 10px 0;
+  margin: 20px 0;
+  -webkit-animation: fade-description 1s;
+  animation: fade-description 1s;
 }
 a {
   text-decoration: none;
@@ -29,4 +31,19 @@ a {
 }
 a:hover {
   color: #6b778c;
+}
+
+h1, h3 {
+  -webkit-animation: fade-name 1s;
+  animation: fade-name 1s;
+}
+
+@keyframes fade-description {
+  from {opacity: 0;}
+  to {opacity: 0.7;}
+}
+
+@keyframes fade-name {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }

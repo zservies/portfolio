@@ -14,9 +14,12 @@ button {
   color: black;
 }
 
-button:hover, a:hover, .selected-nav {
+button:hover, .selected-nav {
   background-color: #1848c4;
   color: white;
+  a {
+    color: white;
+  }
 }
 .nav-button-wrapper {
   text-align: right;

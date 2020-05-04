@@ -5,8 +5,8 @@
         <i class="material-icons">home</i>
       </button>
       <button mat-flat-button [ngClass] = "{'selected-nav': (buttonToggled.about.isToggled)}" (click) = "toggleNav('about')">Projects.</button>
-      <button mat-flat-button [ngClass] = "{'selected-nav': (buttonToggled.resume.isToggled)}" (click) = "toggleNav('resume')">
-        <a [ngClass] = "{'selected-nav': (buttonToggled.resume.isToggled)}" target="_blank" href="../../assets/ZacharyServies_Resume.pdf">Resume.</a>
+      <button mat-flat-button (click) = "toggleNav('resume')">
+        <a target="_blank" href="../../assets/ZacharyServies_Resume.pdf">Resume.</a>
       </button>
     </div>
   </div>
