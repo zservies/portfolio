@@ -1,12 +1,29 @@
 <header>
-  <div class = "nav-button-wrapper">
-    <div class = "nav-buttons">
-      <button mat-flat-button [ngClass] = "{'selected-nav': (buttonToggled.home.isToggled)}" (click) = "toggleNav('home')">
+  <div class="nav-button-wrapper">
+    <div class="name-wrap" *ngIf="showName===true">
+      <div><h1>Zachary Servies</h1></div>
+      <div class="name-subtext"><h3>Software Engineer</h3></div>
+    </div>
+
+    <div class="nav-buttons">
+      <button
+        mat-flat-button
+        [ngClass]="{ 'selected-nav': buttonToggled.home.isToggled }"
+        (click)="toggleNav('home')"
+      >
         <i class="material-icons">home</i>
       </button>
-      <button mat-flat-button [ngClass] = "{'selected-nav': (buttonToggled.about.isToggled)}" (click) = "toggleNav('about')">Projects.</button>
-      <button mat-flat-button (click) = "toggleNav('resume')">
-        <a target="_blank" href="../../assets/ZacharyServies_Resume.pdf">Resume.</a>
+      <button
+        mat-flat-button
+        [ngClass]="{ 'selected-nav': buttonToggled.about.isToggled }"
+        (click)="toggleNav('about')"
+      >
+        Projects.
+      </button>
+      <button mat-flat-button (click)="toggleNav('resume')">
+        <a target="_blank" href="../../assets/ServiesZachary_Resume.pdf"
+          >Resume.</a
+        >
       </button>
     </div>
   </div>
