@@ -1,13 +1,9 @@
 .about-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 80%;
-  width: 100%;
 }
 .content-container {
   width: 35%;
-  height: 95%;
 }
 .about {
   margin: 30px 0;
@@ -16,6 +12,10 @@
   margin: 20px 0;
   font-size: 20px;
   opacity: 0.9;
+}
+.sub-text {
+  opacity: 0.7;
+  display: inline;
 }
 p {
   opacity: 0.7;
@@ -33,17 +33,26 @@ a:hover {
   color: #6b778c;
 }
 
-h1, h3 {
+h1,
+h3 {
   -webkit-animation: fade-name 1s;
   animation: fade-name 1s;
 }
 
 @keyframes fade-description {
-  from {opacity: 0;}
-  to {opacity: 0.7;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.7;
+  }
 }
 
 @keyframes fade-name {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
