@@ -1,11 +1,10 @@
 .wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 50vh;
+  align-items: flex;
+  height: 100%;
 }
 .content {
-  display: inline-block;
   text-align: center;
   font-size: 25px;
 }
@@ -16,28 +15,8 @@
 .description {
   font-size: 20px;
   opacity: 0.7;
-  overflow: visible;
   -webkit-animation: fade-description 3s;
   animation: fade-description 3s;
-}
-
-i {
-  font-size: 50px;
-  user-select: none;
-  position: absolute;
-}
-
-i:hover {
-  color: grey;
-  cursor: pointer;
-}
-.back-arrow {
-  margin-right: 100px;
-  left: 30%;
-}
-.forward-arrow {
-  margin-left: 100px;
-  right: 30%;
 }
 
 @keyframes fade-description {
