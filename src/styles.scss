@@ -14,10 +14,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   background-color: #FDFEFE;
   background-size: cover;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   overflow:hidden;
-  display: block;
-  padding-bottom: 5rem;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
 }
 
 
