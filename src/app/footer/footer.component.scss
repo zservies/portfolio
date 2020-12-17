@@ -20,3 +20,12 @@ table {
     font-weight: bold;
   }
 }
+
+@media (max-width: 375px) {
+  table {
+    border-spacing: 10px;
+  }
+  .footer-container {
+    font-size: 12px;
+  }
+}
