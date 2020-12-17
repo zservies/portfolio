@@ -56,3 +56,12 @@ h3 {
     opacity: 1;
   }
 }
+
+@media (max-width: 768px) {
+  .about-wrapper {
+    width: 100vw;
+  }
+  .content-container {
+    width: 90%;
+  }
+}
